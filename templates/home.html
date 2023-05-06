@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Bosh saxifa {% endblock title %}
+{% block content %}
+{% if user.is_authenticated %}
+<br/>
+<div class="jumbotron">
+    <h1 class="display-4">Assalomu alaykum</h1>
+    <p class="lead">Muftofiddinning Shaxsiy blogiga xush kelibsiz</p>
+    <hr class="my-5">
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="{% url 'article_list'%}" role="button">Postlarni // Ko'rish</a>
+    </p>
+</div>
+{% endif %}
+{% endblock content %}
+
+
